@@ -1,12 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Avatar from "./components/Avatar";
 
 function App() {
+  const [user, setUser] = React.useState({
+    avatarSrc:
+      "http://www.freakingnews.com/pictures/78500/Monkey-Business--78549.jpg"
+  });
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Avatar imgSrc={user.avatarSrc} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

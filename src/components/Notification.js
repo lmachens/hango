@@ -6,7 +6,7 @@ const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: ${props => props.theme.colors.primary};
   box-shadow: 2px 2px 5px #111;
   border-radius: 10px;
   min-height: 100px;
