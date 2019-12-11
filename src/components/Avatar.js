@@ -9,9 +9,10 @@ const Img = styled.img`
 `;
 
 function Avatar({
-  imgSrc = "https://www.kirkleescollege.ac.uk/wp-content/uploads/2015/09/default-avatar.png"
+  imgSrc = "https://www.kirkleescollege.ac.uk/wp-content/uploads/2015/09/default-avatar.png",
+  alt
 }) {
-  return <Img src={imgSrc} />;
+  return <Img src={imgSrc} alt={alt} />;
 }
 
 export default Avatar;
