@@ -1,8 +1,8 @@
 import React from "react";
-import { UserContext } from "../contexts/user";
+import { useAccountMethods } from "../contexts/user";
 
 function AccountButtons() {
-  const { login, logout } = React.useContext(UserContext);
+  const { login, logout } = useAccountMethods();
 
   return (
     <div>
